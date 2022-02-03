@@ -21,22 +21,28 @@
      <div class="container">
        <div class="header-inner row between middle">
         <div class="logo">
-          <a href="#"><img src="images/logo.svg" alt="logo"></a>
+          <a class="dark-logo" href="#"><img src="images/logo.svg" alt="logo"></a>
         </div>
-        <nav class="site-nav">
+        <nav id="siteNav" class="site-nav row">
+          <a class="white-logo" href="#"><img src="images/logo-white.svg" alt="logo"></a>
           <ul class="nav-list row middle">
+            
             <li class="nav-item"><a href="#" class="nav-link">Feature</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
           </ul>
+          <button class="login-btn">Login</button>
+          <button id="closeBtn" class="close-btn"><i class='bx bx-x'></i></button>
         </nav>
-        <button class="login-btn">Login</button>
+ 
+        <button id="burgerBtn" class="burger-btn"><i class='bx bx-menu'></i></button>
        </div>
      </div>
     </header>
-    <div class="hero-part">
-      <div class="container">
-        <div class="hero-desc">
+    
+    <div class="container">
+      <div class="hero__inner inner" >
+        <div class="hero-desc ">
           <h2 class="hero-title">A Simple Bookmark Manager</h2>
           <p class="hero-text">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
           <div class="hero-btns row">
@@ -44,27 +50,36 @@
             <button class="hero-btn">Get it on Firefox</button>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <main id="site-main">
-    <div class="features">
-      <div class="container">
-        <h2 class="title">Features</h2>
-        <p class="text">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices  so you can access them on the go.</p>
-        <ul class="features-list row around">
-          <li class="features-item"><a href="#" class="features-link">Simple Bookmarking</a></li>
-          <li class="features-item"><a href="#" class="features-link">Speedy Searching</a></li>
-          <li class="features-item"><a href="#" class="features-link">Easy Sharing</a></li>
-        </ul>
-        <div class="features-desc">
-           <h2 class="sub-title">Bookmark in one click</h2>
-           <p class="par">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-           <button class="btn">More Info</button>
+        <div class="hero__img ">
+          <img class="hero__img__font" src="images/hero-img.svg" alt="hero-img">
+          <img class="hero__img__back"  src="images/hero-img-2.svg" alt="hero-img">
         </div>
       </div>
+      
     </div>
-    <div class="extension">
+  </div>
+</section>
+<div class="features">
+  <div class="container">
+    <h2 class="title">Features</h2>
+    <p class="text">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices  so you can access them on the go.</p>
+    <ul class="features-list row around">
+      <li class="features-item"><a href="#" class="features-link">Simple Bookmarking</a></li>
+      <li class="features-item"><a href="#" class="features-link">Speedy Searching</a></li>
+      <li class="features-item"><a href="#" class="features-link">Easy Sharing</a></li>
+    </ul>
+    <div class="features-desc">
+       <h2 class="sub-title">Bookmark in one click</h2>
+       <p class="par">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+       <button class="btn">More Info</button>
+    </div>
+  </div>
+</div>
+
+    <div class="hero-part">
+  <main id="site-main">
+
+     <div class="extension">
       <div class="container">
         <h2 class="title">Download the extension</h2>
         <p class="text">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
@@ -147,7 +162,7 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div> 
   </footer>
   <script src="js/main.js"></script>
 </body>
